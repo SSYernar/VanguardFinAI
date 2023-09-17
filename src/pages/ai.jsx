@@ -6,7 +6,7 @@ import { initializeApp } from "firebase/app";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBegceEa9oIsgMZrrlTqyIOrBQhMbEgYOU",
+    apiKey: config.FIREBASE_KEY,
     authDomain: "shellhacksvanguardinvest.firebaseapp.com",
     databaseURL: "https://shellhacksvanguardinvest-default-rtdb.firebaseio.com",
     projectId: "shellhacksvanguardinvest",
