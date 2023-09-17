@@ -341,7 +341,7 @@ export default function Budget() {
                         </div>
                         <div className='fixed-spending-div'>
                             <li>
-                                <FaMoneyCheck />
+                                <FaMoneyCheck className='icon-background'/>
                                 <p>Cash & Checks</p>
                                 <input 
                                     type='number'
@@ -407,19 +407,21 @@ export default function Budget() {
                     </ul>
                 </div>
             </div>
-            <button className='button-45' onClick={handleCalculateBudget}>
+            <button className='button-89' onClick={handleCalculateBudget}>
                 <h1>Calculate Budget</h1>
             </button>
             <div className='budget-container'>
             
             {isCalculated && 
             <div className='calculated-budget'>
-                <h2>Total Expenditure Spending: ${totalExpenditure}</h2>
-                <h2>Total Fixed Spending: ${fixedSpending}</h2>
-                <h2>Total Flexible Spending ${flexibleSpending}</h2>
-                <h3>{message}</h3>
-                <h3>Legend:</h3>
-                <ul style={{ listStyleType: 'none' }} >
+                <div className='user-budget-feedback'> 
+                    <p>Total Expenditure Spending: <strong>${totalExpenditure}</strong></p>
+                    <p>Total Fixed Spending: <strong>${fixedSpending}</strong></p>
+                    <p>Total Flexible Spending <strong>${flexibleSpending}</strong></p>
+                    <h3>{message}</h3>
+                </div>
+                <h3 style={{ textAlign: 'center', fontSize: '1.5rem' }}>Legend:</h3>
+                <ul style={{ listStyleType: 'none', textAlign:'left', fontSize: '1.5rem' }} >
                     {fixedSpendingData.labels.map((label, index) => (
                         <li key={index}>
                             <span 
@@ -436,7 +438,7 @@ export default function Budget() {
                     ))}
                 </ul>
             <div>
-            <h4>Fixed Spending Breakdown</h4>
+            <h4 style={ {fontSize: '1.5rem'} }>Fixed Spending Breakdown</h4>
             <Pie 
                 data={fixedSpendingData} 
                 options={{
@@ -462,8 +464,9 @@ export default function Budget() {
             />
         </div>
         <div>
-            <h4>Flexible Spending Breakdown</h4>
-            <ul style={{ listStyleType: 'none' }} >
+            <h4 style={ {fontSize: '1.5rem'} }> Flexible Spending Breakdown</h4>
+            <h3 style={ {fontSize: '1.5rem'} }>Legend:</h3>
+            <ul style={{ listStyleType: 'none', textAlign: 'left', fontSize: '1.5rem' }} >
                 {flexibleSpendingData.labels.map((label, index) => (
                     <li key={index}>
                         <span 

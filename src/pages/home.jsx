@@ -3,14 +3,14 @@ import { FaRegMoneyBillAlt } from "react-icons/fa";
 export default function Home() {
     return (
         <div className="about-container">
-            <h1 className="about-container-header">Home Page</h1>
-            <div className="learning-basics-container">
-                <h2>Investing Basics</h2>
-                <h3>Empowering Financial Futures: A Journey to Financial Literacy</h3>
-                <FaRegMoneyBillAlt className="bill-icon"/>
-                <p className="investing-101-p">
-                    Welcome to our Financial Literacy Learning Hub, tailored especially for underrepresented communities. In a world where financial knowledge is power, our mission is to bridge the gap, ensuring everyone has access to the essential financial tools and education they deserve. From understanding basic budgeting to making informed investment decisions, our curated resources are designed to illuminate the path to financial independence and resilience. Dive in, take control, and let's build a brighter financial future together.
-                </p>
+            <div className="about-page-header">
+                <div className="header-left">
+                    <h1 className="about-container-header">Vanguard Finance AI</h1>
+                    <p>Empowering Your Financial Future: Learn, Grow, Succeed.</p>
+                </div>
+                <div className="animated-img-container">
+                    <img src="https://media.istockphoto.com/id/1335382452/video/e-learning-online-education-at-home-homeschooling-education-concept-of-online-learning.jpg?s=640x640&k=20&c=i0dnZ1G_OiF9PNoDJYyYeuMan_gKzGXV9lsb5NaGILs=" id="animated-img"></img>
+                </div>
             </div>
             <div className="about-page-investing-101">
                 <h3 className="investing-101">Investing 101</h3>

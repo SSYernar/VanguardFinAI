@@ -242,7 +242,7 @@ const Signup = () => {
                                                             
         </form>
         
-        <p>
+        <p className='sign-up-par'>
             Already have an account?{' '}
             <Link to='/login'> 
                 <p className="dropped-down-item">Login</p>
