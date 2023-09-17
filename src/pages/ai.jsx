@@ -24,7 +24,7 @@ export default function Ai() {
     const [loggedIn, setLoggedIn] = useState(false);
     const [userInput, setUserInput] = useState("");
     const [loading, setLoading] = useState(false);
-    const open_api_key = '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';
+    const open_api_key = config.GPT_KEY;
     const url = "https://api.openai.com/v1/chat/completions";
 
     const db = getDatabase();
