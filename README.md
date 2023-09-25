@@ -1,4 +1,6 @@
 # VanguardFinAI
+# Contributors
+https://github.com/xloupee
 ![4](https://github.com/SSYernar/VanguardFinAI/assets/24649928/2e08505b-a08b-4420-a587-8dc74436226d)
 ![3](https://github.com/SSYernar/VanguardFinAI/assets/24649928/44462d66-d2aa-47f3-bf52-3d6c7427d8af)
 ![2](https://github.com/SSYernar/VanguardFinAI/assets/24649928/a69cf4b3-8987-4519-b344-067aa11fa2d6)
